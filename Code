@@ -1,0 +1,64 @@
+import numpy as np
+import matplotlib as plt
+
+sales= np.array([
+    [120,500,230,75,45],
+    [130,520,210,80,40],
+    [125,530,220,70,50],
+    [140,540,200,90,60]
+    ])
+
+products=('Electronics', 'Groceries', 'Clothing', 'Furniture', 'Stationery')
+sls=0
+t_sales=(0,0,0,0,0)
+print("enter the product number from 1 to 4")
+input(pno)
+
+pno=pno-1
+def total_sales(pno):
+    for i in range (3):
+        sls=sls+sales[pno][:]
+    return sls
+
+
+for j in range (3):
+    t_sales[j]=total_sales(j)
+    print("total sales for product")
+    print(j+1)
+    print("is")
+    print(t_sales[j])
+
+avg_sales=(0,0,0,0,0)
+for k in range (3):
+    avg_sales[k]=t_sales[k]/4
+
+print(avg_sales)
+print(t_sales)
+
+
+
+pt.plot(
+    
+
+
+worst=np.min (t_sales)
+best=np.max(t_sales)
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+        
+    
